@@ -1,0 +1,10 @@
+ <body>Page to send File</body>
+	<p>	{{Error}} </p>
+	<form accept-charset="utf-8" action="/sendFile" method="post" enctype="multipart/form-data">
+
+		Filename: <input type = "text" name = "filename"><br>
+		Destination: <input type="text" size = "20" name= "destination"><br>
+		<!--Filename: <input type="file" id="myFile" name = "filename">-->
+
+	<input type="submit" value="Send"/><br></form>
+</form>

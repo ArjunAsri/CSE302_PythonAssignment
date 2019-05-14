@@ -1,0 +1,31 @@
+
+ <body>Update Profile</body>
+
+
+		<!--Filename: <input type="file" id="myFile" name = "filename">-->
+		<form action="/setProfile">
+            Full Name: <input type="text" name="fullname"><br>
+            Position: <input type="text" name= "position"><br>
+            Description: <input type="text" name="description"><br>
+			Location: <input type="text" name="location"><br>
+			Picture: <input type="text" name="picture"><br>
+			Encryption: <input type="text" name="encryption"><br>
+			DecryptionKey: <input type="text" name="decryptionKey"><br>
+           <input type="submit" value="Submit"/><br></form>
+		
+		<p>Look Up Profile</p>
+			<form action="/getPeoplesProfile">
+			Enter UserName: <input type="text" name="username"><br><p>{{Error}}</P>
+			<img src="{{Picture}}" alt="ProfilePicture" style="width:304px;height:228px;"><br>
+            
+			<p>Name : {{FullName}} </p>
+			<p>Position: {{Position}} </p>
+			<p>Description: {{Description}} </p>
+			<p>Locaiton:{{Location}}</p>
+			
+           <input type="submit" value="Submit"/><br></form>
+			
+			
+			
+		
+</form>
